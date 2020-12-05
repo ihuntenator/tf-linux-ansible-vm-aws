@@ -1,5 +1,9 @@
 # Terraform deploy for AWS linux instance with ansible
 
+Install ansible and a fe few tools to work with jenkins and terraform for provisioning and configuring.
+
+## ansible setup
+
 
 ## the tfvars file
 
@@ -18,8 +22,8 @@ keyPath = "/path/to/key"
 ```
 terraform init
 terraform validate
-terraform plan -var-file=dev.tfvars -out tf-linux-vm-aws.out
-terraform apply "tf-linux-vm-aws.out"
+terraform plan -var-file=dev.tfvars -out tf.out
+terraform apply "tf.out"
 ```
 
 ## terrarform explore
