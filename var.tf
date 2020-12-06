@@ -1,7 +1,8 @@
-variable "access_key" { }
-variable "secret_key" { }
-variable "keyName" { }
-variable "keyPath" { }
+variable "access_key" {}
+variable "secret_key" {}
+variable "keyName" {}
+variable "keyPath" {}
+
 variable "region" {
    default = "ap-southeast-2"
 }
