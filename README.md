@@ -1,6 +1,6 @@
 # Terraform deploy for AWS linux instance with ansible
 
-Install ansible and a fe few tools to work with jenkins and terraform for provisioning and configuring.
+Install ansible and a few tools to work with jenkins and terraform for provisioning and configuring.
 
 ## ansible setup
 

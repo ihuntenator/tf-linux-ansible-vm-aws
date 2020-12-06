@@ -23,10 +23,9 @@ resource "aws_instance" "ansible" {
   provisioner "remote-exec" {
     inline = [
       "sudo yum -y update",
-      "sudo yum -y install ansible git sshpass",
-      "sudo subscription-manager repos --enable ansible-2.9-for-rhel-8-x86_64-rpms",
-      "sudo -y yum install epel-release python-argcomplete",
+      "sudo yum -y install ansible git sshpass python-argcomplete",
       "sudo ansible-galaxy install git+https://github.com/openstack/ansible-hardening",
+      "sudo subscription-manager repos --enable ansible-2.9-for-rhel-8-x86_64-rpms",
     ]
   }
 } 
