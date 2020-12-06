@@ -4,6 +4,11 @@ Install ansible and a fe few tools to work with jenkins and terraform for provis
 
 ## ansible setup
 
+```
+sudo yum install ansible
+sudo subscription-manager repos --enable ansible-2.9-for-rhel-8-x86_64-rpms
+sudo yum install epel-release python-argcomplete
+```
 
 ## the tfvars file
 
@@ -39,3 +44,8 @@ When finished:
 ```
 terraform destroy -var-file=dev.tfvars
 ```
+## References
+
+ * https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html
+ * https://github.com/ansible/ansible
+
